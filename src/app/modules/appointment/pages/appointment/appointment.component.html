@@ -1,0 +1,12 @@
+<p >appointment works! app-picker-card</p>
+<div>
+    <app-picker-card></app-picker-card>
+</div>
+<div Button [type]="'warning'" [inline]="true" (click)="EventEmit()">测试event</div>
+<div *ngFor="let bc of barcodeList;let i=index" style="margin-top:10px">
+    <div style="text-align:center">{{barcodeTitle}}-{{barCodeNum}}</div>
+    <div style="text-align:center"> <img id="bc_{{i}}"/></div>
+</div>
+<div><img id='barId' src="" alt=""></div>
+
+
